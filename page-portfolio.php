@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+	//Template Name: Portfolio
+	get_header();
+?>
+
 	<section class="introducao-interna interna_portfolio">
 		<div class="container">
 			<h1>Portfólio</h1>
@@ -50,4 +54,5 @@
 			</ul>
 		</div>
 	</section>
+	
 <?php get_footer(); ?>
