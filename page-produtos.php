@@ -3,12 +3,16 @@
 	get_header();
 ?>
 
-	<section class="introducao-interna interna_produtos">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	<?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
+
+	<!-- <section class="introducao-interna interna_produtos">
 		<div class="container">
 			<h1>Produtos</h1>
 			<p>conheça todos os nossos produtos</p>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="container produto_item animar-interno">
 		<div class="grid-11">
@@ -101,5 +105,7 @@
 			</div>
 		</div>
 	</section>
+
+<?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
