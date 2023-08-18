@@ -7,24 +7,14 @@
 
 	<section class="introducao">
 		<div class="container">
-			<h1><?php the_field('titulo-introducao'); ?></h1>
+			<h1><?php the_field('titulo_introducao'); ?></h1>
 			<blockquote class="quote-externo">
-				<p><?php the_field('quote-introducao'); ?></p>
-				<cite><?php the_field('citacao-introducao'); ?></cite>
+				<p><?php the_field('quote_introducao'); ?></p>
+				<cite><?php the_field('citacao_introducao'); ?></cite>
 			</blockquote>
 			<a href="produtos/#orcamento" class="btn">Orçamento</a>
 		</div>
 	</section>
-	<!-- <section class="introducao">
-		<div class="container">
-			<h1>Bicicletas Feitas a Mão</h1>
-			<blockquote class="quote-externo">
-				<p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
-				<cite>WILLIAM MORRIS</cite>
-			</blockquote>
-			<a href="produtos.html" class="btn">Orçamento</a>
-		</div>
-	</section> -->
 	<section class="produtos container animar">
 		<h2 class="subtitulo">Produtos</h2>
 		<ul class="produtos_lista">
@@ -56,13 +46,9 @@
 		</ul>
 
 		<div class="call">
-			<p><?php the_field('chamada-produtos'); ?></p>
+			<p><?php the_field('chamada_produtos'); ?></p>
 			<a href="produtos" class="btn btn-preto">Produtos</a>
 		</div>
-		<!-- <div class="call">
-			<p>clique aqui e veja os detalhes dos produtos</p>
-			<a href="produtos.html" class="btn btn-preto">Produtos</a>
-		</div> -->
 
 	</section>
 	<!-- Fecha Produtos -->
