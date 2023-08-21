@@ -5,6 +5,22 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+	<?php
+		$imagem_id = get_field('background_home'); //função do plugin ACF, semelhante ao 'the_field' mas sem o "echo"
+		$background_large = wp_get_attachment_image_src( $imagem_id, 'large'); //'large' é o tamanho definido no arquivo functions.php
+		$background_medium = wp_get_attachment_image_src( $imagem_id, 'medium');
+	?>
+	<style>
+		.introducao {
+			background: url('<?php echo $background_large[0]; ?>') no-repeat center;
+		}
+		@media only screen and (max-width: 767px) {
+			.introducao {
+				background: url('<?php echo $background_medium[0]; ?>') no-repeat center;
+			}
+		}
+	</style>
+
 	<section class="introducao">
 		<div class="container">
 			<h1><?php the_field('titulo_introducao'); ?></h1>
