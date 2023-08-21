@@ -1,6 +1,6 @@
-# Rest
-#### _Restaurante_
-Projeto de estudo de caso do curso de Wordpress da Origamid.
+# Bikcraft
+#### _Loja de bicicletas artesanais_
+Projeto final do curso de Wordpress da Origamid.
 
 ![](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white) ![](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  ![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
@@ -12,7 +12,15 @@ O foco do curso foi de utilizar o plugin [Advanced Custom Fields](https://www.ad
 <img src="./src/assets/animation.gif" alt="gif"/>
 
 ## Instruções
-Na sua página **Home**, o site mostra o cardápio de um restaurante fictício. Há outras duas páginas de **Contato** e **Sobre**, que podem ser acessadas numa barra de navegação do *header* e do *footer*.
+Sua página **Home**, o site mostra um resumo do conteúdo de todas as outras páginas de Produtos, Portfólio, Sobre e Contato.
+
+Na página de **Produtos**, o cliente pode escolher entre três modelos de bicicleta: "passeio", "esporte" e "retro".
+
+A página **Portólio** mostra um carroçel de imagens, das bicicletas produzidas pela loja.
+
+A história da loja é contada na página **Sobre** e também a missão, visão e valores da marca.
+
+Para entrar em contato com a loja, o cliente pode ver o telefone e endereço na página **Contato** ou preencher o formulário da página.
 
 É possível verificar o conteúdo estudado durante o curso, selecionando o histórico de [commits].
 
@@ -34,7 +42,8 @@ O curso foi dividio em duas partes/projetos, que podem ser vistas nas *branchs* 
 
 | Parte | Conteúdo desenvolvido |
 | ------ | ------ |
-| [Rest](https://study-origamid-wordpress-git-rest-pedropaivadev.vercel.app/) | Site do restaurante Rest. |
+| [Rest](https://github.com/PedroPaivaDev/study-origamid-wordpress/tree/project-rest) | Site do restaurante Rest. |
+| [Bikcraft](https://github.com/PedroPaivaDev/study-origamid-wordpress/tree/project-bikcraft) | Site da loja Bikcraft. |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
