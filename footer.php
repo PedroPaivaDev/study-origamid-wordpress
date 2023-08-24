@@ -1,7 +1,18 @@
-    <div class="quebra">
+<?php $contato = get_page_by_title('contato'); ?>
+
+<style type="text/css">
+	.quebra {
+		background: url("<?php the_field('background_footer', $contato); ?>") no-repeat center;
+		background-size: cover;
+	}
+</style>
+		
+		<div class="quebra">
       <blockquote class="quote-externo container">
-        <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
-        <cite>WILLIAM MORRIS</cite>
+        <?php the_field('frase_footer', $contato); ?>
+        <cite><?php the_field('autor_footer', $contato); ?></cite>
+        <!-- <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+        <cite>WILLIAM MORRIS</cite> -->
       </blockquote>
     </div>
     <footer>
@@ -10,15 +21,16 @@
 
 					<div class="grid-8 footer_historia">
 						<h3>Nossa História</h3>
-						<p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
+						<?php the_field('resumo_historia', $contato); ?>
+						<!-- <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p> -->
 					</div>
 
 					<div class="grid-4 footer_contato">
 						<h3>Contato</h3>
 						<ul>
-							<li>- 21 9999-9999</li>
-							<li>- contato@bikcraft.com</li>
-							<li>- Botafago - RJ</li>
+							<li>- <?php the_field('telefone', $contato); ?></li>
+							<li>- <?php the_field('email', $contato); ?></li>
+							<li>- <?php the_field('endereco2', $contato); ?></li>
 						</ul>
 					</div>
 
@@ -32,7 +44,7 @@
 
 			<div class="copy">
 				<div class="container">
-					<p class="grid-16">Bikcraft 2015 - Alguns direitos reservados.</p>
+					<p class="grid-16"><?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Alguns direitos reservados.</p>
 				</div>
 			</div>
 		</footer>
