@@ -15,6 +15,7 @@
         <cite>WILLIAM MORRIS</cite> -->
       </blockquote>
     </div>
+		
     <footer>
 			<div class="footer">
 				<div class="container">
@@ -49,11 +50,11 @@
 			</div>
 		</footer>
 
-	<!-- JavaScript -->
+	<!-- JavaScript (tive que manter esse trecho porque os registros não funcionaram) -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 	<!-- JavaScript -->
 
 	<script>
